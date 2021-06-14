@@ -1,0 +1,11 @@
+  applications:
+  - name: dealerreiew
+    routes:
+      - route: gxdjangoserver.us-south.cf.appdomain.cloud
+    memory: 128M
+    buildpack: python_buildpack
+  - name: dealerreiew-nginx
+    routes:
+      - route: gxdjangoserver.us-south.cf.appdomain.cloud/static
+    memory: 128M
+    buildpack: staticfile_buildpack
